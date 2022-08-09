@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Montserrat';
+  src:url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src:url(Fraunces-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+.container {
+  width: 375px;
+  height: 667px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: hsl(30, 38%, 92%);
+  padding: 10px;
+}
+
+.main-card {
+  background: hsl(0, 0%, 100%);
+  width: 337px;
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-img {
+  width: 337px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+.text {
+  padding: 20px;
+}
+
+.text #perfume {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.text h1 {
+  text-transform: capitalize;
+  font-size: 2.3rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.text p {
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.text #number {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+#number span {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button {
+  padding: 0;
+  outline: none;
+  border: none;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color:  hsl(158, 36%, 37%);
+  color:  hsl(0, 0%, 100%);
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 93.5px;
+  border-radius: 5px;
+  transition: 300ms ease background-color;
+}
+
+.button:hover {
+  background-color: hsl(158, 36%, 32%);
+}
+
+.button:active {
+  background-color: hsl(158, 36%, 29%)
+}
+
+.button_img, .button_text {
+  display: inline-flex;
+  align-items: center;
+}
+.button_img {
+  margin-right: 10px;
+}
+.button_text {
+  width: 90px;
+}
+@media screen and (max-width: 900px) {
+  .desktop-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 1440px;
+    height: 800px;
+    padding: 0;
+  }
+  .main-card {
+    width: 600px;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .desktop-img {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .text {
+    width: 300px;
+    padding: 30px;
+  }
+  .text h1 {
+    font-size: 2.3rem;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .button {
+    padding: 10px 62.5px;
+  }
+}
